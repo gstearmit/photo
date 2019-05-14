@@ -88,8 +88,7 @@ class NetworkCommon {
 //      SharedPreferences prefs = await SharedPreferences.getInstance();
 //      String token = prefs.getString('token');
 //      if (token != null) {
-      options.headers["Authorization"] =
-          "Client-ID e993cde7a4d49aa482dd572dfca4dd27891fc573c4f5bed7f202e156e02b8e8e";
+            options.headers["Authorization"] = "Client-ID e993cde7a4d49aa482dd572dfca4dd27891fc573c4f5bed7f202e156e02b8e8e";
 //      }
 
       print("Pre request:${options.method},${options.baseUrl}${options.path}");
@@ -148,8 +147,7 @@ class NetworkCommon {
         });
       }
 
-      print(
-          "Response From:${response.request.method},${response.request.baseUrl}${response.request.path}");
+      print("Response From:${response.request.method},${response.request.baseUrl}${response.request.path}");
       print("Response From:${response.toString()}");
       return response; // continue
     }, onError: (DioError e) async {
@@ -188,8 +186,6 @@ class NetworkCommon {
 
 final authorizationEndpoint = "https://unsplash.com/oauth/authorize";
 final tokenEndpoint = "https://unsplash.com/oauth/token";
-final identifier =
-    "e993cde7a4d49aa482dd572dfca4dd27891fc573c4f5bed7f202e156e02b8e8e";
-final secret =
-    "98647647615be9bee8a75473574b380829b7ddfb0f97efab0fd708cb8596b6b5";
+final identifier = "e993cde7a4d49aa482dd572dfca4dd27891fc573c4f5bed7f202e156e02b8e8e";
+final secret ="98647647615be9bee8a75473574b380829b7ddfb0f97efab0fd708cb8596b6b5";
 final redirectUrl = "http://localhost:8080";
